@@ -7,7 +7,7 @@ def scan_hosts():
     nm = nmap.PortScanner()
     data = nm.scan(arguments=arg)
 
-    # with open('~/sbisec_hosts.txt') as f:
+    # with open('~/host_ips.txt') as f:
     #     lines = [line.rstrip() for line in f]
     #     result = nm.nmap_version_detection(lines)
     for host in nm.all_hosts():
